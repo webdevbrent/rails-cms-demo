@@ -61,6 +61,7 @@ Rails.application.configure do
     enable_starttls_auto: true,
     user_name: ENV["MAIL_USERNAME"],
     password: ENV["MAIL_PASSWORD"]
+
   }
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.default_url_options = { host: 'http://172.21.0.5:3000', port: 3000 }
 end
