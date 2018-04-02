@@ -9,7 +9,8 @@ class UserRegistrations::RegistrationsController < Devise::RegistrationsControll
             :password_confirmation,
             :first_name,
             :last_name,
-            :username
+            :username,
+            :image
         )
     end
 
@@ -17,10 +18,12 @@ class UserRegistrations::RegistrationsController < Devise::RegistrationsControll
         params.require(:user).permit(
             :email,
             :password,
+            :current_password,
             :password_confirmation,
             :first_name,
             :last_name,
-            :username
+            :username,
+            :image
         )
     end
 

@@ -10,6 +10,6 @@ class CommentMailer < ApplicationMailer
     @post = @comment.post
 
     mail to: @post.user.email,
-    subject: "New post for #{@post.title}"
+    subject: "New comment for #{@post.title}"
   end
 end
