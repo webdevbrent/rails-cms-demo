@@ -30,3 +30,9 @@ end
         post_id: rand(1..50)
     )
 end
+
+
+app_setting = AppSetting.create!(
+    theme_name: 'pulse',
+    tab_name: 'acme_app'
+)
